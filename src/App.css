@@ -1,38 +1,342 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contain{
+  width: 35%;
+  height: auto;
+  background-color: black;
+  margin: auto;
+  
+  border-radius: 10px;
+  border: 4px solid red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rolldice{
+  width: 35%;
+  height: 100vh;
+  background-color: black;
+  border-radius: 5px;
+  border: 3px solid red;
+  padding: 2px;
+  margin: auto;
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+.btn{
+  margin-top: -50px;
+  background-color: black;
+  color: white;
+  border:  2px solid red;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.page{
+  text-align: center;
+}
+.btn:hover{
+background-color: rgb(34, 33, 33);
+border: none;
+}
+h1{
+  color: white;
+  justify-content: first baseline;
+}
+.col1{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size:40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.imge{
+  
+  width: 100%;
+  
+}
+.col2{
+
+  justify-content: space-around;
+}
+.rollcontainer{
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-end;
+ margin-top: 10%;
+}
+.input{
+  border :2px solid red;
+  border-radius: 3px;
+  margin-top: 34px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: red;
+}
+.bx h1{
+text-align: center;
+font-size: 70px;
+text-transform: uppercase;
+margin-bottom: 50x;
+margin-top: 40px;
+}
+.butn:hover{
+  background-color: rgb(43, 42, 42);
+  border: none;
+}
+.total{
+  color: red;
+}
+.hist{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+.bx p{
+  line-height: 2rem;
+  text-align: justify;
+  padding: 10px;
+}
+
+.hist{
+  width: 35%;
+  height: 90vh;
+  
+  border: 2px solid red;
+  background-color: black;
   color: white;
-}
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
+.box1{
+  display: flex;
+  justify-content: space-around;
+}
+.nme{
+  color: red;
+}
+.dv span{
+  margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite
+}
+@keyframes glow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 20px #db284c;
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 30px #b42549, 0 0 10px #a3293e;
   }
+}
+.box2{
+  display: flex;
+  justify-content: space-around;
+}
+.box3{
+  display: flex;
+  justify-content: space-around;
+}
+.box4{
+  display: flex;
+  justify-content: space-around;
+}
+span{
+  color: red;
+}
+.dv{
+  color: red;
+}
+.butn{
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 10px;
+}
+@media screen and (max-width:500px) {
+  h1{
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  .contain{
+    
+    width: 100%;
+    margin-top: 0px;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width:501px) and (max-width:539px){
+  *{
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .contain{
+    
+    width: 45%;
+    margin: 10px;
+    margin: auto;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width:540px) and (max-width:912px) {
+  h1{
+    font-size: 24px;
+    margin-top: 5px;
+  }
+  .contain{
+    
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width:570px) {
+  *{
+    box-sizing: border-box;
+  }
+  .hist h1{
+    font-size: 25px;
+  }
+  .hist{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  .bx p{
+    font-size: 10px;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 10px;
+  }
+  .hist .btn{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width:570px) {
+  *{
+    box-sizing: border-box;
+  }
+  
+  .hist{
+    width:50%;
+    height: auto;
+    margin: 10px;
+    margin: auto;
+  }
+  .hist .btn{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:720px) {
+  *{
+    box-sizing: border-box;
+  }
+  .rolldice{
+    width: 100%;
+    height: 100vh;
+    margin: 10px;
+    margin: auto;
+  }
+  .dv span{
+    font-size: 1.4rem;
+  }
+  .box4 ,.box1{
+    font-size: 14px;
+  }
+  .butn{
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:374px) {
+  *{
+    box-sizing: border-box;
+  }
+  .rolldice{
+    width: 100%;
+    height: 100vh;
+    margin: 10px;
+    margin: auto;
+  }
+  .box4 ,.box1{
+    font-size: 10px;
+  }
+  .butn{
+    padding: 3px;
+    font-size: 8px;
+  }
+  .dv span{
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width:720px) and (max-width:910px) {
+  *{
+    box-sizing: border-box;
+  }
+  
+  .rolldice{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 80px;
+   
+    margin: auto;
+    margin-top: 20%;
+  }
+  
+}
+@media screen and (min-width:910px) and (max-width:1000px) {
+  *{
+    box-sizing: border-box;
+  }
+  
+  .rolldice{
+    width: 50%;
+    height: 70vh;
+    margin: 10px;
+    margin: auto;
+  }
+  
 }
